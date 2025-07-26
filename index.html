@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayesha Ali | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+      perspective: 1000px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      transform: rotateX(3deg);
+      border-bottom: 4px solid #fbd46d;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fbd46d;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 100px 30px;
+      max-width: 1200px;
+      margin: auto;
+      transform: rotateY(1deg);
+    }
+
+    .about, .projects, .contact, .resume, .extras {
+      background: white;
+      margin: 40px 0;
+      padding: 60px;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      transform: rotateX(1deg);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .about:hover, .projects:hover, .contact:hover, .resume:hover, .extras:hover {
+      transform: rotateX(0deg) scale(1.01);
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #203a43;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .project {
+      background: #f3f3f3;
+      padding: 30px;
+      border-radius: 12px;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #2c5364;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #203a43;
+      color: white;
+      margin-top: 60px;
+      box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.3);
+      transform: rotateX(-2deg);
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #2c5364;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    a.btn:hover {
+      background: #1a2930;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        width: 100%;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ayesha Ali</h1>
+    <p>Frontend & WordPress Developer | Django Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <a href="#extras">Extras</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer specializing in WordPress, Django, and modern frontend development. I build user-friendly, responsive websites for clients worldwide.</p>
+    <p><strong>Skills:</strong> HTML, CSS, JavaScript, WordPress, Django, Bootstrap, Git, Prompt Engineering</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Job Recruitment Site</h3>
+        <p>Django-based job portal with custom user roles, messaging, and interview features.Developed a full-stack Job Recruitment Web Application using Django, featuring role-based access for Job Seekers, Employers, and Admins. Implemented modules for job posting, resume submission, application tracking, interview scheduling, and real-time messaging.</p>
+      </div>
+      <div class="project">
+        <h3>WordPress Blog</h3>
+        <p>Designed and developed a responsive personal blog using Elementor and custom plugins.Built a fully functional WordPress blog website with a custom theme, optimized for performance, SEO, and responsiveness. Integrated social sharing, categories, comment system, and user-friendly backend controls for content management.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Static HTML/CSS portfolio with responsive design and contact form.Developed a clean, responsive HTML/CSS portfolio website to showcase projects, skills, and contact information. Deployed using GitHub Pages for free online access.
+
+</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>My Resume</h2>
+    <p>Click the button below to download my resume.</p>
+    <a class="btn" href="assets/ayesha_resume.pdf" target="_blank">Download Resume</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ayeshaali1524@gmail.com">ayeshaali1524@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Ashuu-24" target="_blank">https://github.com/Ashuu-24</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ayesha-ali-a240492b0/" target="_blank">https://www.linkedin.com/in/ayesha-ali-a240492b0/</a></p>
+  </section>
+
+  <section id="extras" class="extras">
+    <h2>What Makes Me Different</h2>
+    <p>I offer unique, detail-oriented solutions customized to the needs of every client. From complete design to advanced backend features — I make sure your site stands out!</p>
+    <p>I also offer training, code reviews, and website optimization services.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ayesha Ali. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
